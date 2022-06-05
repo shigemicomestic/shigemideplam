@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="logstyle.css">
+    </head>
+
+
+     <body >
+		>		
+        <h2>BẮT ĐẦU THAM GIA VỚI SHIGEMI THÔI!</h2>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>TẠO MỘT TÀI KHOẢN MỚI</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i style="font-size:24px" class="fa">&#xf09a;</i></a>
+				<a href="#" class="social"><i style="font-size:24px" class="fa">&#xf1a0;</i></a>
+			</div>
+			<span>Hoặc bạn có thể sử dụng email để đăng ký</span>
+			<input type="text" placeholder="Tên đăng nhập" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Mật khẩu" />
+			<button>ĐĂNG KÝ</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>ĐĂNG NHẬP TÀI KHOẢN</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i style="font-size:24px" class="fa">&#xf09a;</i></a>
+				<a href="#" class="social"><i style="font-size:24px" class="fa">&#xf1a0;</i></a>
+			</div>
+			<span>Hoặc bạn có thể đăng nhập bằng email</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Mật khẩu" />
+			<a href="#">Bạn quên mật khẩu?</a>
+			<button>ĐĂNG NHẬP</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Xin chào!</h1>
+				<p>Hãy tạo tài khoản để bắt đầu mua sắm nhé!</p>
+                <p>Nếu bạn đã có tài khoản, hãy ấn nút bên dưới và bắt đầu mua sắm thoaiii</p>
+				<button class="ghost" id="signIn">ĐĂNG NHẬP</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Chào mừng bạn quay trở lại</h1>
+				<p>Hãy đăng nhập tài khoản để bắt đầu cùng nhau mua sắm ở Shigemi nhé!</p>
+                <p>Nếu bạn chưa có tài khoản, hãy ấn vào nút tạo tài khoản ở nút bên dưới ^^</p>
+				<button class="ghost" id="signUp">Tạo tài khoản</button>
+			</div>
+		</div>
+	</div>
+</div>
+    </body>
+
+
+    <script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+	    container.classList.add("right-panel-active");
+    });
+
+        signInButton.addEventListener('click', () => {
+	    container.classList.remove("right-panel-active");
+    });
+    </script>
+</html>
